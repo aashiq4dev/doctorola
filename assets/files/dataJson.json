@@ -1,0 +1,22 @@
+{
+  "doctors":[
+    {
+      "name": "Dr. Karim",
+      "drDesc": "Brain Specilist",
+      "img": "assets/images/dr_1.png",
+      "rating": "4.8"
+    },
+    {
+      "name": "Dr. Fatima Khatun",
+      "drDesc": "Heart Specilist",
+      "img": "assets/images/dr_2.png",
+      "rating": "4.4"
+    },
+    {
+      "name": "Dr. Karim",
+      "drDesc": "Brain Specilist",
+      "img": "assets/images/dr_3.png",
+      "rating": "4.8"
+    }
+  ]
+}

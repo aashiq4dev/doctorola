@@ -1,0 +1,19 @@
+{
+  "catalog":[
+    {
+      "catImg": "assets/images/tooth.png",
+      "onDuty": "08 Doctors",
+      "catName": "Tooth"
+    },
+    {
+      "catImg": "assets/images/bone.png",
+      "onDuty": "15 Doctors",
+      "catName": "Bone"
+    },
+    {
+      "catImg": "assets/images/heart.png",
+      "onDuty": "12 Doctors",
+      "catName": "Heart"
+    }
+  ]
+}
