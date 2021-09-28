@@ -13,7 +13,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,10 +24,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: AppRoutes.welcomePage,
       routes: {
-        AppRoutes.homePage:(context)=>const MyHomePage(),
-        AppRoutes.welcomePage:(context)=> const WelcomePage(),
-        AppRoutes.loginPage:(context)=> const LoginPage(),
-        AppRoutes.signupPage:(context)=>const SignUpPage()
+        AppRoutes.homePage: (context) => const MyHomePage(),
+        AppRoutes.welcomePage: (context) => const WelcomePage(),
+        AppRoutes.loginPage: (context) => const LoginPage(),
+        AppRoutes.signupPage: (context) => const SignUpPage(),
       },
     );
   }

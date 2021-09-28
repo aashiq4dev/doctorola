@@ -3,11 +3,10 @@ import 'package:doctorola/componets/login_background_welcome.dart';
 import 'package:doctorola/componets/rounded_button.dart';
 import 'package:doctorola/componets/social_login_section.dart';
 import 'package:doctorola/componets/text_field_form.dart';
-import 'package:doctorola/componets/welcome_page_background.dart';
+
 import 'package:doctorola/utils/colors.dart';
 import 'package:doctorola/utils/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -19,8 +18,6 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
     return Scaffold(
       body: LoginBackgroundAndWelcome(
         start: Column(
@@ -37,13 +34,15 @@ class _LoginPageState extends State<LoginPage> {
               obScuretext: true,
               text: "Password",
               icon: Icon(
-                Icons.mail_rounded,
+                Icons.lock_rounded,
                 color: aPrimaryAppBarColor,
               ),
               subIcon:
                   Icon(Icons.visibility_rounded, color: aPrimaryAppBarColor),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             WelcomeFlatButton(
               color: aPrimaryColor,
               text: 'LOGIN',
@@ -60,7 +59,8 @@ class _LoginPageState extends State<LoginPage> {
                   width: 5,
                 ),
                 GestureDetector(
-                    onTap: () =>Navigator.pushNamed(context, AppRoutes.signupPage),
+                    onTap: () =>
+                        Navigator.pushNamed(context, AppRoutes.signupPage,),
                     child: const Text(
                       "SingUp",
                       style: TextStyle(fontWeight: FontWeight.w600),
@@ -73,10 +73,10 @@ class _LoginPageState extends State<LoginPage> {
             const DividerSection(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children:const [
-                SocialLogin(img:"assets/icons/facebook.svg"),
-                SocialLogin(img:"assets/icons/twitter.svg"),
-                SocialLogin(img:"assets/icons/google-plus.svg"),
+              children: const [
+                SocialLogin(img: "assets/icons/facebook.svg"),
+                SocialLogin(img: "assets/icons/twitter.svg"),
+                SocialLogin(img: "assets/icons/google-plus.svg"),
               ],
             ),
           ],

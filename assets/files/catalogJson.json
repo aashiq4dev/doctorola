@@ -14,6 +14,11 @@
       "catImg": "assets/images/heart.png",
       "onDuty": "12 Doctors",
       "catName": "Heart"
+    },
+    {
+      "catImg":"assets/images/brain.png",
+      "onDuty":"08 Doctors",
+      "catName":"Brain"
     }
   ]
 }
